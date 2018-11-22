@@ -1,0 +1,76 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class Game {
+    public static void main(String[] args) {
+while(true) {
+
+
+    System.out.println("Witaj w moim osobistym kalkulatorze");
+    System.out.println("Wybierz funkcje działania");
+    System.out.println("1- Dodawanie, 2- odejmowanie, 3- dzielenie, 4- mnożenie: ");
+    Scanner Functions = new Scanner(System.in);
+    int parameter;
+    parameter = Functions.nextInt();
+
+    switch (parameter) {
+        case 1: {
+            System.out.println("Wybrales DODAWANIE");
+
+            System.out.println("Podaj dwa parametry liczbowe");
+            Scanner addition1 = new Scanner(System.in);
+            Scanner addition2 = new Scanner(System.in);
+
+            double add1 = addition1.nextDouble();
+            double add2 = addition2.nextDouble();
+            double sum = add1 + add2;
+
+            System.out.println("Suma wyniku wynosi: " + sum);
+
+        }
+        break;
+        case 2: {
+
+            System.out.println("Wybrales ODEJMOWANIE !");
+            System.out.println("Podaj dwa parametry liczbowe");
+            Scanner addition1 = new Scanner(System.in);
+            Scanner addition2 = new Scanner(System.in);
+
+            double add3 = addition1.nextDouble();
+            double add4 = addition2.nextDouble();
+
+            double wynik = add3 - add4;
+
+            System.out.println("Wynik odejmowania wynosi " + wynik);
+        }
+        break;
+        case 3: {
+            System.out.println("Wybrales Dzielenie !");
+            System.out.println("Podaj dwa parametry liczbowe");
+            Scanner addition1 = new Scanner(System.in);
+            Scanner addition2 = new Scanner(System.in);
+
+            double add5 = addition1.nextDouble();
+            double add6 = addition2.nextDouble();
+
+            double suma2 = add5 / add6;
+            System.out.println("Wynik dzielenia wynosi " + suma2);
+        }
+        break;
+        case 4: {
+            System.out.println("Wybrales Dzielenie !");
+            System.out.println("Podaj dwa parametry liczbowe");
+            Scanner addition1 = new Scanner(System.in);
+            Scanner addition2 = new Scanner(System.in);
+
+            double add7 = addition1.nextDouble();
+            double add8 = addition2.nextDouble();
+
+            double suma3 = add7 * add8;
+            System.out.println("Wynik mnozenia wynosi " + suma3);
+        }break;
+    }
+}
+
+}
+}
